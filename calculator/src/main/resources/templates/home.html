@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Calculator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" th:src="@{/web/js/jquery-3.6.1.min.js}"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	<link rel="stylesheet" type="text/css" th:href="@{/web/css/default.css}" > 
+</head>
+
+<body>
+<div id="logo">
+   <img th:src="@{/web/img/jefferson.jpg}" width="280" height="45"/>
+</div>   
+<div class="center">
+	<table id="dataTable">
+
+		<tbody id="target">
+			<tr>
+				<td colspan="3"><input type="text" id="result"></td>
+				<td><input class="clr" type="button" value="c" /> </td>
+			</tr>
+			<tr>
+				<td><input class="key" type="button" value="1"> </td>
+				<td><input class="key" type="button" value="2"> </td>
+				<td><input class="key" type="button" value="3"> </td>
+				<td><input class="key" type="button" value="/"> </td>
+			</tr>
+			<tr>
+				<td><input class="key" type="button" value="4"> </td>
+				<td><input class="key" type="button" value="5"> </td>
+				<td><input class="key" type="button" value="6"> </td>
+				<td><input class="key" type="button" value="*"> </td>
+			</tr>
+			<tr>
+				<td><input class="key" type="button" value="7"> </td>
+				<td><input class="key" type="button" value="8"> </td>
+				<td><input class="key" type="button" value="9"> </td>
+				<td><input class="key" type="button" value="-"> </td>
+			</tr>
+			<tr>
+
+				<td><input class="key" type="button" value="."> </td>
+				<td><input class="key" type="button" value="0"> </td>
+				<td><input class="equals" type="button" value="="> </td>
+				<td><input class="key" type="button" value="+"> </td>
+			</tr>
+			<tr>
+
+				<td><input class="key" type="button" value="("> </td>
+				<td><input class="key" type="button" value=")"> </td>
+				<td><input class="key" type="button" value="<"> </td>
+				<td><input class="key" type="button" value=">"> </td>
+
+			</tr>
+		</tbody>
+	</table>
+</div>
+	<script type="text/javascript" th:src="@{/web/js/main.js}"></script>
+</body>
+
+</html>
